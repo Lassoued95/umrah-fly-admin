@@ -11,7 +11,7 @@ export function getToken(): string | null {
 export function setToken(token: string) {
   localStorage.setItem(TOKEN_KEY, token);
 }
-
+// For testing purposes only. In a real app, you'd want to implement a proper logout mechanism.
 export function clearToken() {
   localStorage.removeItem(TOKEN_KEY);
 }
